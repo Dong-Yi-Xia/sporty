@@ -4,6 +4,7 @@ import Store from './Store'
 import './App.css';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -14,8 +15,6 @@ function App() {
           <Store sportName="Basketball"/>
           <Store sportName="Soccer"/>
         </ul>
-
-
 
     </div>
   );

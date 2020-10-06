@@ -28,7 +28,7 @@ class Store extends React.Component{
             <li className="container">
                 <img src={logo} width="100px" alt="controller"  />
                 <p>Sport Shop: {this.props.sportName}</p>
-                <button className="ui primary button" onClick={this.handleOnClick}> Number of Likes: {this.state.count}</button>
+                <Button className="button like" onClick={this.handleOnClick}> Number of Likes: {this.state.count}</Button>
             </li>
         )
     }
