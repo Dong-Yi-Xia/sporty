@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  box-sizing: border-box;  
+}
+
+li {
+  border: solid 2px black;
+  margin: 10px auto 10px ;
+  padding: 10px;
+  width: 50%;
+  list-style-type: none;
+}
+
+.container{
+  background-color: rgb(233, 166, 250);
+  position: relative;
+}
+
+.container img {
+  float: left;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #61dafb; 
+}
+
+h1,p{
+  font-family: 'Permanent Marker', cursive;
+
+}
