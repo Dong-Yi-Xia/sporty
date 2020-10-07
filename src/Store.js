@@ -23,13 +23,14 @@ class Store extends React.Component{
     }
 
     render(){
-        // console.log(this.props.sportName)
+       
+         let {sportName, likes} = this.props.shop
         return(
             <li className="container">
                 <img src={logo} width="100px" alt="controller"  />
 
-                <p>Sport Shop: {this.props.sportName}</p>
-                <Button className="button like" onClick={this.handleOnClick}> Number of Likes: {this.state.count}</Button>
+                <p>Sport Shop: {sportName}</p>
+                <Button className="button like" onClick={this.handleOnClick}> Number of Likes: {likes}</Button>
             </li>
         )
     }
