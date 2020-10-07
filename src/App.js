@@ -1,23 +1,30 @@
 import React from 'react';
 import Header from './Header'
-import Store from './Store'
+import arrayOfShops from './Database'
+import ShopContainer from './ShopContainer'
 import './App.css';
 
 
 
-function App() {
-  return (
-    <div className="App">
-        <Header title="Sporty Shop"/>
-        
-        <ul>
-          <Store sportName="Tennis"/>
-          <Store sportName="Basketball"/>
-          <Store sportName="Soccer"/>
-        </ul>
+class App extends React.Component {
 
-    </div>
-  );
+
+  
+  state = {
+    shops: arrayOfShops
+  }
+
+  render() {
+    
+    return (
+      <div className="App">
+          <Header title="Sporty Shop"/>
+          
+          <ShopContainer shops = {this.state.shops} />
+
+      </div>
+    );
+  }
 }
 
 export default App;
